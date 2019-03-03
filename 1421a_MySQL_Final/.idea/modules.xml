@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../1416_MySQL_JSON/1416_MySQL_JSON.iml" filepath="$PROJECT_DIR$/../1416_MySQL_JSON/1416_MySQL_JSON.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1417_MySQLi_test/1417_MySQLi_test.iml" filepath="$PROJECT_DIR$/../1417_MySQLi_test/1417_MySQLi_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1417a_MySQLi_Import/1417a_MySQLi_Import.iml" filepath="$PROJECT_DIR$/../1417a_MySQLi_Import/1417a_MySQLi_Import.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1418_MySQLi_Insert/1418_MySQLi_Insert.iml" filepath="$PROJECT_DIR$/../1418_MySQLi_Insert/1418_MySQLi_Insert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1419_MySQLi_Update/1419_MySQLi_Update.iml" filepath="$PROJECT_DIR$/../1419_MySQLi_Update/1419_MySQLi_Update.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1420_MySQLi_Check/1420_MySQLi_Check.iml" filepath="$PROJECT_DIR$/../1420_MySQLi_Check/1420_MySQLi_Check.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1421_MySQLi_Ontime/1421_MySQLi_Ontime.iml" filepath="$PROJECT_DIR$/../1421_MySQLi_Ontime/1421_MySQLi_Ontime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1421a_MySQLi_Final.iml" filepath="$PROJECT_DIR$/1421a_MySQLi_Final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1422_Read_Contacts/1422_Read_Contacts.iml" filepath="$PROJECT_DIR$/../1422_Read_Contacts/1422_Read_Contacts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1423_Read_Media/1423_Read_Media.iml" filepath="$PROJECT_DIR$/../1423_Read_Media/1423_Read_Media.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CH14-SQLite-MySQLi.iml" filepath="$PROJECT_DIR$/../CH14-SQLite-MySQLi.iml" />
+    </modules>
+  </component>
+</project>
