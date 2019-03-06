@@ -24,8 +24,9 @@
     </group>
     <group
         android:id="@+id/m_group2"
-        android:checkableBehavior="all"
         android:visible="false">
+        <!--android:checkableBehavior="all"-->
+
         <item
             android:id="@+id/m_add"
             android:orderInCategory="101"
