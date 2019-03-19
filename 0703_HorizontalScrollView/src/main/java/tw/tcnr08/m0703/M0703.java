@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.BounceInterpolator;
@@ -43,6 +44,7 @@ public class M0703 extends AppCompatActivity implements
     };
     private GridView gridview;
     private ImageSwitcher imgSwi;
+    private Animation anim,anim1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -82,40 +84,55 @@ public class M0703 extends AppCompatActivity implements
         gridview.setAdapter(new GridAdapter(this,thumbImgArr)); //在外部新增子class
     }
 
+
+
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
     {
         imgSwi.clearAnimation();
         imgSwi.setAnimation(null);
+
+        if(anim!=null){
+            anim.cancel();
+        }else if(anim1!=null){
+            anim1.cancel();
+        }
+
         int ss=(int)(Math.random()*5);  //值1~4
-        //ss=2;
+//        int ss=3;
         switch (ss){
             case 1:
-                imgSwi.setOutAnimation(AnimationUtils.loadAnimation(this,R.anim.anim_alphain_out));
-                imgSwi.setInAnimation(AnimationUtils.loadAnimation(this,R.anim.anim_alphain_in));
+                anim = AnimationUtils.loadAnimation(this,R.anim.anim_alphain_out);
+                anim1 = AnimationUtils.loadAnimation(this,R.anim.anim_alphain_in);
+                imgSwi.setOutAnimation(anim);
+                imgSwi.setInAnimation(anim1);
 //                Animation anima =AnimationUtils.loadAnimation(this,R.anim.anim_alphain_outin);
 //                imgSwi.setAnimation(anima);
-                Toast.makeText(getApplicationContext(),"1.alpha",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"alpha",Toast.LENGTH_SHORT).show();
                 break;
             case 2:
                 //imgSwi.clearAnimation();
-                imgSwi.setOutAnimation(AnimationUtils.loadAnimation(this,R.anim.anim_trans_out));
-                imgSwi.setInAnimation(AnimationUtils.loadAnimation(this,R.anim.anim_trans_in));
-                Toast.makeText(getApplicationContext(),"2.trans",Toast.LENGTH_SHORT).show();
+                anim = AnimationUtils.loadAnimation(this,R.anim.anim_trans_out);
+                anim1 = AnimationUtils.loadAnimation(this,R.anim.anim_trans_in);
+                imgSwi.setOutAnimation(anim);
+                imgSwi.setInAnimation(anim1);
+                Toast.makeText(getApplicationContext(),"trans",Toast.LENGTH_SHORT).show();
                 break;
             case 3:
                 //imgSwi.clearAnimation();
-                imgSwi.setOutAnimation(AnimationUtils.loadAnimation(this,R.anim.anim_scale_rotate_out));
-                imgSwi.setInAnimation(AnimationUtils.loadAnimation(this,R.anim.anim_scale_rotate_in));
-                Toast.makeText(getApplicationContext(),"3.rotate",Toast.LENGTH_SHORT).show();
+                anim = AnimationUtils.loadAnimation(this,R.anim.anim_scale_rotate_out);
+                anim1 = AnimationUtils.loadAnimation(this,R.anim.anim_scale_rotate_in);
+                imgSwi.setOutAnimation(anim);
+                imgSwi.setInAnimation(anim1);
+                Toast.makeText(getApplicationContext(),"rotate",Toast.LENGTH_SHORT).show();
                 break;
             case 4:
-                imgSwi.clearAnimation();
-                imgSwi.setAnimation(null);
-                Animation anim =AnimationUtils.loadAnimation(this,R.anim.anim_trans_bounce);
+//                imgSwi.clearAnimation();
+//                imgSwi.setAnimation(null);
+                anim = AnimationUtils.loadAnimation(this,R.anim.anim_trans_bounce);  //Animation
                 anim.setInterpolator(new BounceInterpolator());
                 imgSwi.setAnimation(anim);
-                Toast.makeText(getApplicationContext(),"4.bounce",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"bounce",Toast.LENGTH_SHORT).show();
                 break;
         }
 

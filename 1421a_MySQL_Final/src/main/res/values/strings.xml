@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">1420_MySQLi_Check</string>
-    <string name="myname">8號吳典芹</string>
-    <string name="action_settings">結束</string>
+    <string name="app_name">DianChinWu作品</string>
+    <string name="myname">吳典芹</string>
+    <string name="action_settings">返回</string>
+    <string name="title"></string>
+    <string name="a0001_a">Animation</string>
+    <string name="a0001_b">MySQL+SQLite</string>
+    <string name="a0001_c">OpenData</string>
+    <string name="toast_back">請按右上角返回</string>
+    <string name="toast_close">請按右上角關閉</string>
+
 </resources>

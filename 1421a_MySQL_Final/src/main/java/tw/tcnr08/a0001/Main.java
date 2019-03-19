@@ -1055,7 +1055,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener, Ada
         }
     };
 
-    public boolean onKeyDown(int keyCode, KeyEvent event) { //進用返回鍵
+    public boolean onKeyDown(int keyCode, KeyEvent event) { //禁用返回鍵
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             return true;
         }
