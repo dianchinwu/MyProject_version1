@@ -6,6 +6,7 @@
     <string name="a0001_a">Animation</string>
     <string name="a0001_b">MySQL+SQLite</string>
     <string name="a0001_c">OpenData</string>
+    <string name="a0001_d">Github詳細程式碼</string>
     <string name="toast_back">請按右上角返回</string>
     <string name="toast_close">請按右上角關閉</string>
 

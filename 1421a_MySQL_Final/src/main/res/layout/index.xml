@@ -49,6 +49,23 @@
         android:textAllCaps="false"
         android:textSize="24sp" />
 
+
+    <Button
+        android:id="@+id/a0001_b04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a0001_b03"
+        android:layout_alignStart="@+id/a0001_b03"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/btn_default"
+        android:backgroundTint="@color/White"
+        android:text="@string/a0001_d"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+
+
+
     <TextView
         android:id="@+id/myname"
         android:layout_width="wrap_content"

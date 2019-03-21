@@ -1,6 +1,7 @@
 package tw.tcnr08.a0001;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 
 public class Index extends AppCompatActivity implements View.OnClickListener
 {
-    private Button b01,b02,b03;
+    private Button b01,b02,b03,b04;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -27,9 +28,11 @@ public class Index extends AppCompatActivity implements View.OnClickListener
         b01 = (Button)findViewById(R.id.a0001_b01);
         b02 = (Button)findViewById(R.id.a0001_b02);
         b03 = (Button)findViewById(R.id.a0001_b03);
+        b04 = (Button)findViewById(R.id.a0001_b04);
         b01.setOnClickListener(this);
         b02.setOnClickListener(this);
         b03.setOnClickListener(this);
+        b04.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +50,11 @@ public class Index extends AppCompatActivity implements View.OnClickListener
             case R.id.a0001_b03:
                 Intent it_c = new Intent(Index.this, M1602.class);
                 startActivity(it_c);
+                break;
+            case R.id.a0001_b04:
+                Uri uri = Uri.parse("https://github.com/dianchinwu/MyProject_version1/tree/master/1421a_MySQL_Final/src/main/java/tw/tcnr08/a0001");
+                Intent it_d = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(it_d);
                 break;
         }
     }
