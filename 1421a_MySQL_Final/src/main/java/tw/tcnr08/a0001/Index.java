@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class Index extends AppCompatActivity implements View.OnClickListener
 {
-    private Button b01,b02,b03,b04;
+    private Button b01,b02,b03,b04,b05;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -29,10 +29,12 @@ public class Index extends AppCompatActivity implements View.OnClickListener
         b02 = (Button)findViewById(R.id.a0001_b02);
         b03 = (Button)findViewById(R.id.a0001_b03);
         b04 = (Button)findViewById(R.id.a0001_b04);
+        b05 = (Button)findViewById(R.id.a0001_b05);
         b01.setOnClickListener(this);
         b02.setOnClickListener(this);
         b03.setOnClickListener(this);
         b04.setOnClickListener(this);
+        b05.setOnClickListener(this);
     }
 
     @Override
@@ -44,7 +46,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener
                 startActivity(it_a);
                 break;
             case R.id.a0001_b02:
-                Intent it_b = new Intent(Index.this,Main.class);
+                Intent it_b = new Intent(Index.this,M1421.class);
                 startActivity(it_b);
                 break;
             case R.id.a0001_b03:
@@ -52,9 +54,13 @@ public class Index extends AppCompatActivity implements View.OnClickListener
                 startActivity(it_c);
                 break;
             case R.id.a0001_b04:
-                Uri uri = Uri.parse("https://github.com/dianchinwu/MyProject_version1/tree/master/1421a_MySQL_Final/src/main/java/tw/tcnr08/a0001");
-                Intent it_d = new Intent(Intent.ACTION_VIEW,uri);
+                Intent it_d = new Intent(Index.this, M1901.class);
                 startActivity(it_d);
+                break;
+            case R.id.a0001_b05:
+                Uri uri = Uri.parse("https://github.com/dianchinwu/MyProject_version1/tree/master/1421a_MySQL_Final/src/main/java/tw/tcnr08/a0001");
+                Intent it_e = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(it_e);
                 break;
         }
     }

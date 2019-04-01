@@ -14,5 +14,7 @@
     <dimen name="fontsize20">20sp</dimen>
     <dimen name="fontsize30">30sp</dimen>
 
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="g_top_margin">100dp</dimen>
 
 </resources>

@@ -162,7 +162,7 @@ public class M1602 extends AppCompatActivity
                                 PM25.setBackgroundColor(getResources().getColor(R.color.Green));  //lightgreen
                             } else if(PM25num >= 11 &&PM25num < 23) {
                                 PM25.setTextColor(getResources().getColor(R.color.Black));
-                                PM25.setBackgroundColor(getResources().getColor(R.color.Leafgreen));
+                                PM25.setBackgroundColor(getResources().getColor(R.color.mediumaquamarine));
                             } else if (PM25num >= 23 &&PM25num < 35) {
                                 PM25.setTextColor(getResources().getColor(R.color.Black));
                                 PM25.setBackgroundColor(getResources().getColor(R.color.Teal));  //olivedrab

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="@dimen/Margins"
+    tools:context=".M2001">
+
+    <TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="105sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5sp"
+        android:background="@drawable/score"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textColor="#FFFF0000"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_toStartOf="@+id/btn_play"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/btn_play"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/imageView5"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_toEndOf="@+id/btn_play"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tscore"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/btn_play"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_toEndOf="@+id/btn_play"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="160sp"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/checkbox_off_background"
+        android:contentDescription="@string/btn_play"
+        android:onClick="btn_play_Click"
+        android:text="@string/btn_play"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_width="160sp" />
+
+</RelativeLayout>

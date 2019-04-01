@@ -40,7 +40,12 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    // Dependency for Google Sign-In
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    //現在都用implementation不用compile
 }

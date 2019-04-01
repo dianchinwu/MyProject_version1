@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="desc_google_icon">Google Logo</string>
+    <string name="title_text">Google 帳號登入\n快速啟動</string>
+    <string name="signed_out">登出</string>
+    <string name="OptionalAction">加註</string>
+    <string name="disconnect">中斷連結</string>
+    <string name="signed_in_fmt">Google Account: %s</string>
+    <string name="map_button">開啟地圖</string>
+
+    <string name="email">google_email: %s</string>
+    <string name="first_name">google_first_name: %s</string>
+    <string name="last_name">google_last_name: %s</string>
+    <string name="id">id: %s</string>
+
+    <!--<string name="hint">請輸入</string>-->
+    <string name="data_button">資料庫</string>
+    <string name="mult_view">多景點</string>
+    <string name="one_view">單景點</string>
+
+    </resources>

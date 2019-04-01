@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--256色-->
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
@@ -163,38 +162,11 @@
     <color name="darkblue">#00008B</color><!--暗藍色 -->
     <color name="navy">#000080</color><!--海軍色 -->
 
-
-    <!--old-->
-    <color name="Pink">#ffb3ff</color>
-    <color name="Orange">#FA8072</color>
-    <color name="Green">#90ee90</color>
-    <color name="Skyblue">#87cefa</color>
-<!--debby-->
-    <color name="Darkcyan">#FFB6C1</color>
-    <color name="Palevioletred">#D87093</color>
-    <color name="Mediumvioletred">#c71585</color>
-    <color name="Tomato">#FF6347</color>
-    <color name="Darkorange">#FF8C00</color>
-    <color name="Firebrick">#B22222</color>
-    <color name="Tan">#d2b48c</color>
-    <color name="Sandybrown">#F4A460</color>
-    <color name="Darkkhaki">#BDB76B</color>
-    <color name="Gold">#ffd700</color>
-    <color name="Wheat">#f5deb3</color>
-    <color name="Mistyrose">#FFE4E1</color>
-    <color name="Mediumslateblue">#008B8B</color>
-    <color name="Palegreen">#98f898</color>
-    <color name="Lightblue">#add8e6</color>
-    <color name="Water">#1d81b9</color>
-    <color name="Cornflowerblue">#6495ED</color>
-    <color name="Darkmagenta">#8B008B</color>
-    <color name="Blueviolet">#8a2be2</color>
-    <color name="Mediumorchid">#BA55D3</color>
-    <color name="Violet">#EE82EE</color>
     <!--login-->
     <color name="blue_grey_500">#607D8B</color>
     <color name="blue_grey_600">#546E7A</color>
     <color name="blue_grey_700">#455A64</color>
     <color name="blue_grey_800">#37474F</color>
     <color name="blue_grey_900">#263238</color>
+
 </resources>
