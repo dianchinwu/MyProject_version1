@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class Index extends AppCompatActivity implements View.OnClickListener
 {
-    private Button b01,b02,b03,b04,b05;
+    private Button b01,b02,b03,b04,b05,b06;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -30,11 +30,13 @@ public class Index extends AppCompatActivity implements View.OnClickListener
         b03 = (Button)findViewById(R.id.a0001_b03);
         b04 = (Button)findViewById(R.id.a0001_b04);
         b05 = (Button)findViewById(R.id.a0001_b05);
+        b06 = (Button)findViewById(R.id.a0001_b06);
         b01.setOnClickListener(this);
         b02.setOnClickListener(this);
         b03.setOnClickListener(this);
         b04.setOnClickListener(this);
         b05.setOnClickListener(this);
+        b06.setOnClickListener(this);
     }
 
     @Override
@@ -58,9 +60,14 @@ public class Index extends AppCompatActivity implements View.OnClickListener
                 startActivity(it_d);
                 break;
             case R.id.a0001_b05:
-                Uri uri = Uri.parse("https://github.com/dianchinwu/MyProject_version1/tree/master/1421a_MySQL_Final/src/main/java/tw/tcnr08/a0001");
-                Intent it_e = new Intent(Intent.ACTION_VIEW,uri);
+                Uri uri_e = Uri.parse("https://tcnr1608.000webhostapp.com/allschoolthings/jqm/index.php");
+                Intent it_e = new Intent(Intent.ACTION_VIEW,uri_e);
                 startActivity(it_e);
+                break;
+            case R.id.a0001_b06:
+                Uri uri_f = Uri.parse("https://github.com/dianchinwu/MyProject_version1/tree/master/1421a_MySQL_Final/src/main/java/tw/tcnr08/a0001");
+                Intent it_f = new Intent(Intent.ACTION_VIEW,uri_f);
+                startActivity(it_f);
                 break;
         }
     }
